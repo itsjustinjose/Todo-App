@@ -1,3 +1,4 @@
+import { Typography } from '@mui/material';
 import React, { useState } from 'react';
 
 function TodoApp() {
@@ -18,7 +19,7 @@ function TodoApp() {
 
   return (
     <div>
-      <h1>Todo App</h1>
+      <Typography variant='h4'>ToDo App</Typography>
       <form onSubmit={handleAddTodo}>
         <input type="text" value={inputValue} onChange={handleInputChange} />
         <button type="submit">Add Todo</button>
